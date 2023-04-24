@@ -20,11 +20,12 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-telescope/telescope.nvim'
-
+  use 'folke/todo-comments.nvim'
   use 'github/copilot.vim'
 
   -- Dependencies
   use "nvim-lua/plenary.nvim"
+  use 'folke/trouble.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
