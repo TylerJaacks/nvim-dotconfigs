@@ -22,10 +22,20 @@ return require('packer').startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'folke/todo-comments.nvim'
   use 'github/copilot.vim'
+  use 'zadirion/Unreal.nvim'
+  use 'ludovicchabant/vim-gutentags'
+  use 'neoclide/coc.nvim'
+  use 'liuchengxu/vim-which-key'
+  use 'derekwyatt/vim-fswitch'
+  use 'tyru/open-browser.vim'
+  use 'tyru/open-browser-github.vim'
+  use 'liuchengxu/vista.vim'
+  use 'folke/noice.nvim'
 
   -- Dependencies
-  use "nvim-lua/plenary.nvim"
+  use 'nvim-lua/plenary.nvim'
   use 'folke/trouble.nvim'
+  use 'tpope/vim-dispatch'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

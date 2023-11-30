@@ -1,0 +1,11 @@
+-- TODO
+-- nnoremap <silent> <A-6> :Vista!!<CR>
+
+-- function! LightlineCurrentFunctionVista() abort
+--     let l:method = get(b:, 'vista_nearest_method_or_function', '')
+--     if l:method != ''
+--       let l:method = '[' . l:method . ']'
+--     endif
+--     return l:method
+--   endfunction
+--   au VimEnter * call vista#RunForNearestMethodOrFunction()

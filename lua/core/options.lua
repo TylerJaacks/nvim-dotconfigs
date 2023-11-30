@@ -1,5 +1,8 @@
+-- Map leader keys
+-- vim.g.mapleader = '\\'
+-- vim.g.localLeader = ','
 vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.localLeader = ' '
 
 vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.showcmd = true
