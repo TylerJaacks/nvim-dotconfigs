@@ -31,6 +31,14 @@ return require('packer').startup(function(use)
   use 'tyru/open-browser-github.vim'
   use 'liuchengxu/vista.vim'
   use 'folke/noice.nvim'
+  use 'hrsh7th/nvim-cmp'
+  use 'bufferline.nvim'
+  use 'rcarriga/nvim-notify'
+  use 'echasnovski/mini.nvim'
+  use 'echasnovski/mini.pairs'
+  use 'justinmk/vim-sneak'
+  use 'ggandor/leap.nvim'
+  use 'L3MON4D3/LuaSnip'
 
   -- Dependencies
   use 'nvim-lua/plenary.nvim'

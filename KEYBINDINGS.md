@@ -2,7 +2,7 @@
 
 # Basic Bindings
 
-### Simple Window Management
+### Pane Navigation
 
 `CTRL + K` - Move the cursor pane focus to the Left
 
