@@ -21,28 +21,31 @@ vim.keymap.set("n", "gR", "<cmd>TroubleToggle lsp_references<cr>",
 
 -- API
 -- jump to the next item, skipping the groups
-require("trouble").next({skip_groups = true, jump = true});
+--require("trouble").next({skip_groups = true, jump = true});
 
 -- jump to the previous item, skipping the groups
-require("trouble").previous({skip_groups = true, jump = true});
+--require("trouble").previous({skip_groups = true, jump = true});
 
 -- jump to the first item, skipping the groups
-require("trouble").first({skip_groups = true, jump = true});
+--require("trouble").first({skip_groups = true, jump = true});
 
 -- jump to the last item, skipping the groups
-require("trouble").last({skip_groups = true, jump = true});
+--require("trouble").last({skip_groups = true, jump = true});
 
 -- Telescope
 local actions = require("telescope.actions")
-local trouble = require("trouble.providers.telescope")
+local open_with_trouble = require("trouble.sources.telescope").open
+
+-- Use this to add more results without clearing the trouble list
+local add_to_trouble = require("trouble.sources.telescope").add
 
 local telescope = require("telescope")
 
-telescope.setup {
+telescope.setup({
   defaults = {
     mappings = {
-      i = { ["<c-t>"] = trouble.open_with_trouble },
-      n = { ["<c-t>"] = trouble.open_with_trouble },
+      i = { ["<c-t>"] = open_with_trouble },
+      n = { ["<c-t>"] = open_with_trouble },
     },
   },
-}
+})
