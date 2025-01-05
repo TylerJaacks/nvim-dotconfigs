@@ -31,13 +31,14 @@ return require('packer').startup(function(use)
   use 'liuchengxu/vista.vim'
   use 'folke/noice.nvim'
   use 'hrsh7th/nvim-cmp'
-  use 'bufferline.nvim'
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   use 'rcarriga/nvim-notify'
   use 'echasnovski/mini.nvim'
   use 'echasnovski/mini.pairs'
   use 'justinmk/vim-sneak'
   use 'ggandor/leap.nvim'
   use 'L3MON4D3/LuaSnip'
+  use 'jansedivy/jai.vim'
 
   -- Dependencies
   use 'nvim-lua/plenary.nvim'
